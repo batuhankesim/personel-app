@@ -1,0 +1,24 @@
+
+<div class="personel-ekle">
+    <h2>Yeni Personel Ekle</h2>
+    <form (ngSubmit)="personelekle()" #personelForm="ngForm">
+      <div class="form-group">
+        <label for="ad">Adı:</label>
+        <input type="text" class="form-control" id="ad" name="ad" required [(ngModel)]="yeniPersonel.ad">
+      </div>
+      <div class="form-group">
+        <label for="soyad">Soyadı:</label>
+        <input type="text" class="form-control" id="soyad" name="soyad" required [(ngModel)]="yeniPersonel.soyad">
+      </div>
+      <div class="form-group">
+        <label for="departman">Departman Kodu:</label>
+        <input type="number" class="form-control" id="departman" name="departman" required [(ngModel)]="yeniPersonel.departmanKodu">
+      </div>
+      <div class="form-group">
+        <label for="iseGiris">İşe Giriş Tarihi:</label>
+        <input type="date" class="form-control" id="iseGiris" name="iseGiris" required [(ngModel)]="yeniPersonel.iseGirisTarihi">
+      </div>
+      <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+  </div>
+  

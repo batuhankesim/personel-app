@@ -1,0 +1,38 @@
+<!-- calisan-listesi.component.html -->
+
+<div class="calisan-listesi">
+    <h2>Çalışan Listesi</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Sicil Numarası</th>
+          <th>Adı</th>
+          <th>Soyadı</th>
+          <th>Departman Kodu</th>
+          <th>Departman Adı</th>
+          <th>İşe Giriş Tarihi</th>
+          <th>E-posta</th>
+          <th>Cinsiyet</th>
+          <th>GSM Telefon</th>
+          <th>Sabit Telefon</th>
+          <th>İşten Çıkış Tarihi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let personel of personeller">
+          <td>{{ personel.sicilNumarasi }}</td>
+          <td>{{ personel.ad }}</td>
+          <td>{{ personel.soyad }}</td>
+          <td>{{ personel.departmanKodu }}</td>
+          <td>{{ personel.departmanAdi }}</td>
+          <td>{{ personel.iseGirisTarihi }}</td>
+          <td>{{ personel.eposta }}</td>
+          <td>{{ personel.cinsiyet }}</td>
+          <td>{{ personel.gsmTelefon }}</td>
+          <td>{{ personel.telefonSabit }}</td>
+          <td>{{ personel.istencikisTarihi }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
